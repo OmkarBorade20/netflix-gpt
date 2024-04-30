@@ -1,0 +1,26 @@
+NetflixGPT
+
+1. npx create-react-app.
+
+- gives us a strafehold (Boiler Plate) to use react framework for designing our app.
+- it uses webpack as a bundler just like we used parcel for food-order-app.
+- the boiler plate will have jest and react-testing-library built in, unlike the setup we had done.
+
+
+2. how to setup tailwind css
+
+I. npm install -D tailwindcss
+II. npm install -D tailwindcss
+III.  add in tailwind.config.js  content: ["./src/**/*.{html,js,jsx}"],
+IV. write inside main css file  
+            index.css File
+            @tailwind base;
+            @tailwind components;
+            @tailwind utilities;
+
+
+-  when desiging big forms use a thrid party library like formik to develop the same.
+
+- 
+
+

@@ -1,7 +1,7 @@
 # Netflix GPT 
 is a Movie Suggestion app which uses chatGPT apis and suggest new movies.
 
-
+Link :- https://netflixgpt-e3e88.web.app
 
 # what steps we followed. 
 

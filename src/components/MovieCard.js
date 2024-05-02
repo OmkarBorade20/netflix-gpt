@@ -24,7 +24,7 @@ const MovieCard = ({movie}) => {
 
 
 
-  return  <img onClick={()=>fetchVideos(movie.id,movie)}className="w-48 ml-10 transition-all duration-150 hover:scale-110 "  src={TMDB_IMG + movie.poster_path}/>
+  return  <img onClick={()=>fetchVideos(movie.id,movie)}className="w-48 ml-10 transition-all duration-150 hover:scale-110  "  src={TMDB_IMG + movie.poster_path}/>
 }
 
 export default MovieCard

@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
  
-
+.root{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 
 @layer utilities {
     /* Hide scrollbar for Chrome, Safari and Opera */

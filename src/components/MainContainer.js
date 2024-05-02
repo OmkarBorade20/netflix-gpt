@@ -28,7 +28,7 @@ const MainContainer = () => {
 
   return (
     <div className=''>
-        <div className='absolute w-full'>
+        <div className='absolute w-full   no-scrollbar'>
             <VideoTitle />
         </div>
         <VideoBackground id={id}/>

@@ -15,7 +15,7 @@ const usePopularMovies = () => {
     const fetchPopularMovies=async()=>{
         const data=await fetch(" https://api.themoviedb.org/3/movie/popular?region=IN",API_OPTIONS)
         const json=await data.json();
-        console.log("Popular Movies",json.results)
+        //console.log("Popular Movies",json.results)
         dispatch(addPopular(json.results));
     }
 

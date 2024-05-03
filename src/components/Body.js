@@ -4,6 +4,7 @@ import Browse from './Browse'
 import { RouterProvider } from 'react-router-dom'
 import { createBrowserRouter } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import MovieDetails from './MovieDetails';
 
 
 const Routes=createBrowserRouter([
@@ -14,6 +15,10 @@ const Routes=createBrowserRouter([
   {
     "path":"/browse",
     element:<Browse/>
+  },
+  {
+    "path":"/movie/details/:movieId",
+    element:<MovieDetails/>
   }
 ]) 
 

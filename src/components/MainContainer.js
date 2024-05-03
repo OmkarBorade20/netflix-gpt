@@ -4,7 +4,6 @@ import SecondaryContainer from './SecondaryContainer'
 import { useDispatch, useSelector } from 'react-redux';
 import VideoTitle from './VideoTitle';
 import VideoBackground from './VideoBackground';
-import useRecomendedMovies from '../hooks/useRecomendedMovies';
 import { addActionTitle } from '../utils/movieSlice';
 
 
@@ -14,7 +13,7 @@ const MainContainer = () => {
     // useNowPlayingMovies();
 
     const nowPlaying=useSelector(store=>store.movie.nowPlaying)
-    console.log("nowPlaying",nowPlaying)
+    //console.log("nowPlaying",nowPlaying)
 
    if(!nowPlaying) return;
 
@@ -24,7 +23,7 @@ const MainContainer = () => {
   }
    const random=randomIntFromInterval(0,19);
    const {original_title,overview,id} = nowPlaying[random];
-   dispatch(addActionTitle({title:original_title,description:overview}));
+   dispatch(addActionTitle({id:id,title:original_title,description:overview}));
 
   return (
     <div className=''>

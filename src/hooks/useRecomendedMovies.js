@@ -15,7 +15,7 @@ const useRecomendedMovies = ({movieId}) => {
         const data=await fetch("https://api.themoviedb.org/3/movie/"+{movieId}+"/recommendations",API_OPTIONS);
         const json=await data.json();
 
-        console.log("Now Playing Movies Api ",json.results)
+        //console.log("Now Playing Movies Api ",json.results)
         //add to store.
         dispatch(addRecomended(json.results));
       }

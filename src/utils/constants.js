@@ -6,10 +6,13 @@ export const API_OPTIONS={
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyYmQ2MGRhNGNhMjhlOWZkOTc5ZjE5ZWE2NjM3ODFjNiIsInN1YiI6IjY2MzBlYWQ1YjViYzIxMDEyYTUzYWI0OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qrECkITZ7VCP4mowpFg0_SKJ66YIGkPiS8bOsiRdIrU'
+       Authorization: 'Bearer '+ process.env.REACT_APP_TMDB_TOKEN
+
     }
   };
 
   export const VIDEO_API="https://api.themoviedb.org/3/movie/{movie_id}/videos" 
 
   export const TMDB_IMG="https://image.tmdb.org/t/p/w500"
+
+  export const OPENAI_KEY=process.env.REACT_APP_OPEN_API_KEY;

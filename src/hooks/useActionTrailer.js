@@ -14,7 +14,7 @@ const useActionTrailer = (id) => {
     const url = VIDEO_API.replace("{movie_id}", id);
     const data = await fetch(url, API_OPTIONS);
     const json = await data.json();
-    console.log("Movie Video Lists", json.results);
+    //console.log("Movie Video Lists", json.results);
 
     //filter Trailer from Video Api.
     const filter_video = json?.results?.filter((e) => e.type === "Trailer");

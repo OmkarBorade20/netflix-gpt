@@ -2,7 +2,7 @@ export const IsValidSignin=(email,password)=>{
     const isvalidEmail=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
     const isvalidPassword=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password);
 
-    console.log("isvalidEmail",isvalidEmail,"isvalidPassword",)
+    //console.log("isvalidEmail",isvalidEmail,"isvalidPassword",)
     if(!isvalidEmail)
         return "Email is Invalid !."
     if(!isvalidPassword)
